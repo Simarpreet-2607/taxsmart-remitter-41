@@ -63,6 +63,10 @@ export default {
           DEFAULT: "hsl(var(--danger))",
           foreground: "hsl(var(--danger-foreground))",
         },
+        milestone: {
+          DEFAULT: "hsl(var(--milestone))",
+          foreground: "hsl(var(--milestone-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

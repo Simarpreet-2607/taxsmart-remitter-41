@@ -2,7 +2,7 @@ import { useState } from "react";
 import { calculateTCS, formatINR, LRS_LIMIT, PURPOSE_LABELS, type RemittancePurpose, getTCSRate } from "@/lib/tcs-logic";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ArrowRight, CheckCircle2, AlertTriangle, Info } from "lucide-react";
+import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 interface Props {
   totalUsed: number;

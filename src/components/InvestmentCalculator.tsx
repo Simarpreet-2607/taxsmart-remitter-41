@@ -56,7 +56,7 @@ export default function InvestmentCalculator({ totalUsed }: Props) {
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-muted-foreground">TCS ({(rate * 100).toFixed(1)}% above limit)</span>
-              <span className={`font-medium ${tcs > 0 ? "text-danger" : "text-safe"}`}>{formatINR(tcs)}</span>
+              <span className={`font-medium ${tcs > 0 ? "text-milestone" : "text-safe"}`}>{formatINR(tcs)}</span>
             </div>
             <div className="border-t border-border pt-2 flex justify-between text-sm font-semibold">
               <span>Total Outflow</span>

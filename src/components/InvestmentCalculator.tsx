@@ -69,10 +69,10 @@ export default function InvestmentCalculator({ totalUsed }: Props) {
 
           {/* Smart Warning */}
           {willCrossLimit ? (
-            <div className="flex gap-2 items-start rounded-md bg-warning/10 border border-warning/20 p-3">
-              <AlertTriangle className="h-4 w-4 text-warning shrink-0 mt-0.5" />
+            <div className="flex gap-2 items-start rounded-md bg-milestone/10 border border-milestone/20 p-3">
+              <Info className="h-4 w-4 text-milestone shrink-0 mt-0.5" />
               <p className="text-xs text-foreground">
-                This transfer will cross your ₹10L limit. <strong>{formatINR(tcs)}</strong> will be blocked as TCS at {(rate * 100).toFixed(1)}%.
+                This transfer crosses your ₹10L threshold. <strong>{formatINR(tcs)}</strong> will be collected as TCS at {(rate * 100).toFixed(1)}% — fully refundable when you file ITR. You're good to proceed!
               </p>
             </div>
           ) : (
